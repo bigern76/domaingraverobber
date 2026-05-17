@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domain Grave Robber — The Simple Guide to Finding Expired Domains and Using Them to Profit</title>
+  <meta name="description" content="Learn how to find expired domains with real SEO value, buy them cheap, and flip them for profit. The complete field guide from JCL Publishing." />
+
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1097528138108072');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1097528138108072&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RTWY9WJ65"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8RTWY9WJ65');
+  </script>
+
+  <!-- Reddit Pixel -->
+  <script>
+    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?
+    p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];
+    var t=d.createElement('script');t.src='https://www.redditstatic.com/ads/v2.js';
+    t.async=!0;var s=d.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t,s)}}(window,document);
+    rdt('init','a2_iqm2zutwfm4u');
+    rdt('track', 'PageVisit');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Gumroad overlay script -->
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+
+  <style>
+    /* ── Reset & Variables ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #080808;
+      --deep:     #0e0e18;
+      --navy:     #1A1A2E;
+      --blood:    #C0392B;
+      --crimson:  #e84c3d;
+      --ember:    #ff6b4a;
+      --fog:      #9aa0b0;
+      --light:    #e8e0d5;
+      --white:    #f5f0eb;
+      --gold:     #c9a84c;
+
+      --font-display: 'Cinzel Decorative', serif;
+      --font-heading: 'Cinzel', serif;
+      --font-body:    'Crimson Pro', serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--light);
+      font-family: var(--font-body);
+      font-size: 19px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Noise texture overlay ─────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.4;
+    }
+
+    /* ── Hero ──────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px 60px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 80%, rgba(192,57,43,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 50% 100%, rgba(192,57,43,0.25) 0%, transparent 60%),
+        linear-gradient(180deg, #0a0a14 0%, #0e0e1a 40%, #120810 100%);
+      z-index: 0;
+    }
+
+    /* Animated red mist */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: -20%; right: -20%;
+      height: 45%;
+      background: radial-gradient(ellipse 70% 100% at 50% 100%, rgba(192,57,43,0.22) 0%, transparent 70%);
+      animation: mistPulse 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes mistPulse {
+      from { opacity: 0.6; transform: scaleX(1); }
+      to   { opacity: 1;   transform: scaleX(1.08); }
+    }
+
+    /* Floating data streams */
+    .streams {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .stream {
+      position: absolute;
+      top: -20%;
+      width: 1px;
+      height: 200%;
+      background: linear-gradient(180deg, transparent 0%, rgba(192,57,43,0.6) 40%, rgba(192,57,43,0.3) 70%, transparent 100%);
+      animation: streamFall linear infinite;
+    }
+    .stream::before {
+      content: attr(data-chars);
+      position: absolute;
+      top: 30%;
+      left: -8px;
+      font-family: monospace;
+      font-size: 10px;
+      color: rgba(192,57,43,0.5);
+      writing-mode: vertical-rl;
+      letter-spacing: 4px;
+      white-space: nowrap;
+    }
+    @keyframes streamFall {
+      from { transform: translateY(-10%); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 0.6; }
+      to   { transform: translateY(110%); opacity: 0; }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--blood);
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.2s;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      color: var(--crimson);
+      line-height: 1.1;
+      margin-bottom: 8px;
+      text-shadow:
+        0 0 40px rgba(192,57,43,0.5),
+        0 0 80px rgba(192,57,43,0.2),
+        2px 2px 0 rgba(0,0,0,0.8);
+      opacity: 0;
+      animation: fadeUp 0.9s ease forwards 0.4s;
+    }
+
+    .hero-divider {
+      width: 280px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--blood), transparent);
+      margin: 20px auto;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.6s;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-heading);
+      font-size: clamp(1rem, 2.5vw, 1.35rem);
+      color: var(--light);
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      opacity: 0;
+      animation: fadeUp 0.9s ease forwards 0.7s;
+    }
+
+    .hero-meta {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--fog);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.9s;
+    }
+
+    /* ── Book mockup ───────────────────────────────────── */
+    .book-wrap {
+      position: relative;
+      width: 240px;
+      margin: 0 auto 48px;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 1s;
+    }
+
+    .book-cover {
+      width: 100%;
+      border-radius: 4px 12px 12px 4px;
+      box-shadow:
+        -8px 8px 0 rgba(0,0,0,0.6),
+        -4px 4px 20px rgba(192,57,43,0.3),
+        0 20px 60px rgba(0,0,0,0.8),
+        0 0 80px rgba(192,57,43,0.15);
+      display: block;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .book-wrap:hover .book-cover {
+      transform: perspective(600px) rotateY(-8deg) translateX(6px);
+      box-shadow:
+        -16px 8px 0 rgba(0,0,0,0.5),
+        -8px 4px 30px rgba(192,57,43,0.4),
+        0 30px 80px rgba(0,0,0,0.9),
+        0 0 100px rgba(192,57,43,0.2);
+    }
+
+    .book-glow {
+      position: absolute;
+      bottom: -20px; left: 10%; right: 10%;
+      height: 30px;
+      background: radial-gradient(ellipse, rgba(192,57,43,0.4), transparent 70%);
+      filter: blur(10px);
+      animation: glowPulse 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      from { opacity: 0.6; }
+      to   { opacity: 1; }
+    }
+
+    /* ── CTA Button ────────────────────────────────────── */
+    .cta-wrap {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1.2s;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blood) 0%, #8b1a12 100%);
+      border: 1px solid rgba(192,57,43,0.6);
+      padding: 18px 48px;
+      border-radius: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 30px rgba(192,57,43,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--crimson) 0%, var(--blood) 100%);
+      box-shadow: 0 6px 40px rgba(192,57,43,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+      transform: translateY(-2px);
+    }
+
+    .btn-primary:hover::before { left: 100%; }
+
+    .price-tag {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      color: var(--fog);
+      letter-spacing: 2px;
+      margin-top: 14px;
+    }
+
+    .price-tag strong {
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .guarantee {
+      font-size: 13px;
+      color: var(--fog);
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* ── Section base ──────────────────────────────────── */
+    section {
+      position: relative;
+      padding: 100px 24px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: var(--font-heading);
+      font-size: 10px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--blood);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      color: var(--crimson);
+      line-height: 1.2;
+      margin-bottom: 32px;
+      text-shadow: 0 0 30px rgba(192,57,43,0.3);
+    }
+
+    /* ── Hook section ──────────────────────────────────── */
+    .hook {
+      background: linear-gradient(180deg, var(--black) 0%, var(--deep) 100%);
+      border-top: 1px solid rgba(192,57,43,0.15);
+    }
+
+    .hook p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--light);
+      margin-bottom: 24px;
+    }
+
+    .hook p strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .hook-highlight {
+      border-left: 3px solid var(--blood);
+      padding: 20px 28px;
+      margin: 40px 0;
+      background: rgba(192,57,43,0.06);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.7;
+    }
+
+    /* ── What's Inside ─────────────────────────────────── */
+    .inside {
+      background: var(--deep);
+      border-top: 1px solid rgba(192,57,43,0.1);
+      border-bottom: 1px solid rgba(192,57,43,0.1);
+    }
+
+    .inside-grid {
+      display: grid;
+      gap: 0;
+    }
+
+    .inside-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 20px;
+      align-items: start;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .inside-item.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .inside-item:last-child { border-bottom: none; }
+
+    .item-number {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      color: var(--blood);
+      letter-spacing: 2px;
+      padding-top: 4px;
+      font-weight: 700;
+    }
+
+    .item-text {
+      font-size: 1.05rem;
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    .item-text strong {
+      color: var(--white);
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Not For Everyone ──────────────────────────────── */
+    .not-for-everyone {
+      background: var(--black);
+      text-align: center;
+    }
+
+    .nfe-box {
+      border: 1px solid rgba(192,57,43,0.3);
+      padding: 60px 48px;
+      position: relative;
+      background: rgba(192,57,43,0.03);
+    }
+
+    .nfe-box::before, .nfe-box::after {
+      content: '✦';
+      position: absolute;
+      color: var(--blood);
+      font-size: 18px;
+      opacity: 0.6;
+    }
+    .nfe-box::before { top: 20px; left: 24px; }
+    .nfe-box::after  { bottom: 20px; right: 24px; }
+
+    .nfe-box p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--light);
+      margin-bottom: 20px;
+    }
+
+    .nfe-box p:last-child { margin-bottom: 0; }
+
+    .nfe-box strong { color: var(--white); }
+
+    /* ── Chapters ──────────────────────────────────────── */
+    .chapters {
+      background: var(--deep);
+    }
+
+    .chapter-list {
+      list-style: none;
+      counter-reset: chapter;
+    }
+
+    .chapter-list li {
+      counter-increment: chapter;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      color: var(--fog);
+      transition: color 0.2s ease;
+    }
+
+    .chapter-list li:hover { color: var(--light); }
+
+    .chapter-list li::before {
+      content: counter(chapter, upper-roman);
+      font-size: 10px;
+      color: var(--blood);
+      letter-spacing: 2px;
+      min-width: 32px;
+    }
+
+    /* ── FAQ ───────────────────────────────────────────── */
+    .faq { background: var(--black); }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(192,57,43,0.15);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 24px 0;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      color: var(--light);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+
+    .faq-question:hover { color: var(--white); }
+
+    .faq-icon {
+      color: var(--blood);
+      font-size: 20px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      line-height: 1;
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      font-size: 1rem;
+      color: var(--fog);
+      line-height: 1.75;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding-bottom: 24px;
+    }
+
+    /* ── About ─────────────────────────────────────────── */
+    .about {
+      background: var(--deep);
+      text-align: center;
+      border-top: 1px solid rgba(192,57,43,0.1);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: var(--fog);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* ── Final CTA ─────────────────────────────────────── */
+    .final-cta {
+      background: var(--black);
+      text-align: center;
+      padding: 120px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0; top: 40%;
+      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(192,57,43,0.12), transparent);
+      pointer-events: none;
+    }
+
+    .final-cta .section-title {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 20px;
+    }
+
+    .final-cta p {
+      font-size: 1.15rem;
+      color: var(--fog);
+      max-width: 520px;
+      margin: 0 auto 48px;
+      line-height: 1.7;
+    }
+
+    /* ── Footer ────────────────────────────────────────── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.2);
+      text-transform: uppercase;
+    }
+
+    footer a {
+      color: rgba(192,57,43,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--blood); }
+
+    /* ── Tombstone divider ─────────────────────────────── */
+    .tombstone-divider {
+      text-align: center;
+      padding: 0;
+      line-height: 0;
+      font-size: 32px;
+      color: rgba(192,57,43,0.25);
+      letter-spacing: 24px;
+      margin: -1px 0;
+    }
+
+    /* ── Fade up animation ─────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 600px) {
+      section { padding: 70px 20px; }
+      .nfe-box { padding: 40px 24px; }
+      .book-wrap { width: 180px; }
+      .btn-primary { padding: 16px 32px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <!-- Data streams -->
+    <div class="streams" aria-hidden="true">
+      <div class="stream" data-chars=".COM.NET.ORG" style="left:5%;  animation-duration:12s; animation-delay:0s;"></div>
+      <div class="stream" data-chars="01001101" style="left:15%; animation-duration:16s; animation-delay:3s;"></div>
+      <div class="stream" data-chars=".COM.NET" style="left:28%; animation-duration:14s; animation-delay:1s;"></div>
+      <div class="stream" data-chars="EXPIRED" style="left:42%; animation-duration:18s; animation-delay:5s;"></div>
+      <div class="stream" data-chars="01101001" style="left:58%; animation-duration:13s; animation-delay:2s;"></div>
+      <div class="stream" data-chars=".COM.NET.ORG" style="left:72%; animation-duration:15s; animation-delay:4s;"></div>
+      <div class="stream" data-chars="DELETE" style="left:85%; animation-duration:17s; animation-delay:1.5s;"></div>
+      <div class="stream" data-chars="01010110" style="left:94%; animation-duration:11s; animation-delay:6s;"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">JCL Publishing &nbsp;✦&nbsp; 2026 Edition</p>
+
+      <h1 class="hero-title">Domain Grave Robber</h1>
+      <div class="hero-divider"></div>
+
+      <p class="hero-subtitle">The Simple Guide to Finding Expired Domains<br>and Using Them to Profit</p>
+      <p class="hero-meta">Complete Field Guide &nbsp;·&nbsp; No Fluff &nbsp;·&nbsp; Instant Download</p>
+
+      <!-- Book cover mockup -->
+      <div class="book-wrap">
+        <img
+          src="domain-grave-robber-cover-3.png"
+          alt="Domain Grave Robber guide cover"
+          class="book-cover"
+          width="240"
+        />
+        <div class="book-glow"></div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <a class="gumroad-button btn-primary" href="https://jclpublishing.gumroad.com/l/domaingraverobber" data-gumroad-overlay="true">
+          Get Instant Access
+        </a>
+        <p class="price-tag">Only <strong>$27</strong> &nbsp;·&nbsp; Instant PDF Download</p>
+        <p class="guarantee">30-Day Money-Back Guarantee &nbsp;·&nbsp; No Questions Asked</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOOK ── -->
+  <section class="hook">
+    <div class="container">
+      <span class="section-label reveal">The Opportunity</span>
+
+      <p class="reveal">Right now, while you are reading this sentence, thousands of domain names are expiring.</p>
+      <p class="reveal">Most of them are junk. Everybody knows that.</p>
+      <p class="reveal">But some of them? Some of them have hundreds of real backlinks pointing at them. Years of Google trust baked in. A history that would take a brand new website 12 to 18 months to build from scratch.</p>
+      <p class="reveal">And they are sitting there. Available. For $12.</p>
+
+      <div class="hook-highlight reveal">
+        The people who know how to spot the good ones are quietly buying them, flipping them, and in some cases redirecting them to their own websites to inherit years worth of SEO authority in a single afternoon.
+      </div>
+
+      <p class="reveal">Here is the part that will bother you.</p>
+      <p class="reveal">This is not complicated. It is not some underground secret. It is a skill. A learnable, repeatable skill that most people will never bother to develop because nobody ever laid it out in plain English.</p>
+      <p class="reveal"><strong>That is exactly what Domain Grave Robber does.</strong></p>
+      <p class="reveal">Domains bought for $10 to $60. Sold for $200 to $1,500. No inventory. No shipping. No employees. No customers to deal with. Just you, a browser, and a checklist that tells you exactly what to look for.</p>
+      <p class="reveal">The math works. The question is whether you are going to learn how to do it or keep scrolling.</p>
+    </div>
+  </section>
+
+  <div class="tombstone-divider" aria-hidden="true">🪦 &nbsp; 🪦 &nbsp; 🪦</div>
+
+  <!-- ── WHAT'S INSIDE ── -->
+  <section class="inside">
+    <div class="container">
+      <span class="section-label">What's Inside</span>
+      <h2 class="section-title">Everything You Need.<br>Nothing You Don't.</h2>
+
+      <div class="inside-grid">
+
+        <div class="inside-item">
+          <span class="item-number">01</span>
+          <div class="item-text">
+            <strong>The Complete ExpiredDomains.net Decoder</strong>
+            Every metric explained — LE, DP, ABY, ACR, MMGR — so you stop guessing what the columns actually mean and which ones are lying to you.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">02</span>
+          <div class="item-text">
+            <strong>The 10-Second Spam Ratio Test</strong>
+            The BL/DP formula that eliminates 80% of garbage domains before you waste another minute on them.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">03</span>
+          <div class="item-text">
+            <strong>The Pro Verification Workflow</strong>
+            The exact Ahrefs + Wayback Machine process professionals use before spending a single dollar. Step by step.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">04</span>
+          <div class="item-text">
+            <strong>The Auction Bidding Playbook</strong>
+            How to bid on GoDaddy Auctions without overpaying — including the odd-number trick that wins close auctions.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">05</span>
+          <div class="item-text">
+            <strong>5 Ways to Profit From a Dead Domain</strong>
+            Flip it. Redirect it. Rebuild it. Monetize it. Or use it to transfer SEO link equity to a site you already own.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">06</span>
+          <div class="item-text">
+            <strong>Where to Sell and What to Charge</strong>
+            Afternic, Sedo, Flippa, Dan.com — where to list expired domain names so they actually sell, and how to write listings that attract serious buyers.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">07</span>
+          <div class="item-text">
+            <strong>The 90-Day Action Plan</strong>
+            A realistic schedule with actual expected outcomes. Not a fantasy. An actual week-by-week roadmap for your first three months.
+          </div>
+        </div>
+
+        <div class="inside-item">
+          <span class="item-number">08</span>
+          <div class="item-text">
+            <strong>10 Mistakes That Bury Beginners</strong>
+            The exact errors that cost new domain investors the most money — and exactly how to avoid every single one.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NOT FOR EVERYONE ── -->
+  <section class="not-for-everyone">
+    <div class="container">
+      <span class="section-label reveal" style="display:block; text-align:center;">Honest Talk</span>
+      <h2 class="section-title reveal">This Guide Is Not For Everyone.</h2>
+      <div class="nfe-box reveal">
+        <p>Look. If you want something that runs on autopilot from day one with zero effort, close this page. That thing does not exist.</p>
+        <p>Domain investing takes about 20 to 30 minutes a day and a willingness to learn a handful of concepts that sound intimidating until you actually read them. Then they are obvious.</p>
+        <p>The hardest part is the first two weeks. After that, you will look at a list of expired domains and immediately know which ones are garbage and which ones are worth a second look. That pattern recognition is worth money. Real money.</p>
+        <p>There are no income screenshots in this guide. No testimonials from people who claim to make $40,000 a month from their laptop on a beach. No manufactured urgency. No fake countdown timers.</p>
+        <p><strong>Just the most practical, specific, plainly written guide to expired domain investing that exists. Every section earns its place. Written by JCL Publishing. Researched properly. Priced honestly.</strong></p>
+        <p>If one domain flip pays for it, and it absolutely can, the rest is gravy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHAPTERS ── -->
+  <section class="chapters">
+    <div class="container">
+      <span class="section-label reveal">Table of Contents</span>
+      <h2 class="section-title reveal">The Full Breakdown</h2>
+      <ul class="chapter-list reveal">
+        <li>Introduction: Why Dead Domains Are Digital Gold</li>
+        <li>How Domains Die</li>
+        <li>The Graveyard — Where to Find Dead Domains</li>
+        <li>Reading the Headstone — Decoding the Metrics</li>
+        <li>The Shovel — How to Actually Buy</li>
+        <li>What to Do With the Corpse — Profit Strategies</li>
+        <li>Where to Sell and What to Charge</li>
+        <li>Tools of the Trade</li>
+        <li>Mistakes That Will Get You Buried</li>
+        <li>Realistic Numbers and Expectations</li>
+        <li>Conclusion: Your First Domain</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label reveal">Common Questions</span>
+      <h2 class="section-title reveal">FAQ</h2>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">Do I need any technical experience to do this?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">No. If you can use a web browser and follow a checklist, you have everything you need. The guide walks you through every tool and metric step by step. The learning curve is real but it has nothing to do with coding — it's about learning to read domain data correctly, which this guide teaches you.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">How much money do I need to get started?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">As little as $10 to $15 for a standard domain registration, plus the $4.99 annual GoDaddy Auctions membership. Most people starting out spend under $100 total in their first month across 2 to 3 domain purchases. This is one of the lowest barriers to entry of any side hustle that has real upside.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">How long does it take to sell a domain after I buy it?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Honestly, it varies. Some domains sell within a week. Others take 3 to 6 months. The guide covers realistic timelines, how to price for your target buyer, and when to drop your price if nothing is moving. Patience is part of the strategy.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">Is domain flipping still profitable in 2026?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Yes, but the days of registering random words and selling them for millions are largely over. What works now is systematic evaluation — finding expired domain names with real SEO history and backlink profiles that other buyers overlooked. That's exactly what this guide teaches.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">Do I need a website to do this?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">No. You can list domains for sale on Afternic, Dan.com, and Sedo without owning or building any website. The domain itself is the product. You buy it, list it, and wait for a buyer.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">Can I do this outside the United States?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Yes. The tools, platforms, and strategies in this guide work the same whether you're in the US, UK, Canada, Australia, or anywhere else with reliable internet access. Domain investing is entirely location-independent.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">Is there a refund policy?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">30 days, no questions asked. If you read it and don't feel like you got your $27 worth, email us and we'll refund you. We're confident enough in the guide that we don't need to hide behind a no-refund policy.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FINAL CTA ── -->
+  <section class="final-cta">
+    <div class="container">
+      <span class="section-label">Ready?</span>
+      <h2 class="section-title">You Already Know This Is Worth $27.</h2>
+      <p>You now know this opportunity exists. You know the math works. The only question is whether you are going to do something about it or close this tab and forget you were here.</p>
+      <p style="font-size:1rem; margin-top:-20px; color: var(--fog);">Everything you need. Nothing you do not. Plain English. $27.</p>
+
+      <a class="gumroad-button btn-primary" href="https://jclpublishing.gumroad.com/l/domaingraverobber" data-gumroad-overlay="true">
+        Get Instant Access — $27
+      </a>
+      <p class="price-tag" style="margin-top:20px;">Instant PDF Download &nbsp;·&nbsp; 30-Day Guarantee</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 JCL Publishing &nbsp;·&nbsp; <a href="mailto:hello@domaingraverobber.com">hello@domaingraverobber.com</a> &nbsp;·&nbsp; All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // ── Scroll reveal ──────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, entry.target.dataset.delay || 0);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Inside items staggered
+    document.querySelectorAll('.inside-item').forEach((el, i) => {
+      el.dataset.delay = i * 80;
+      observer.observe(el);
+    });
+
+    // ── FAQ accordion ──────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // CTA click events
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { value: 27, currency: 'USD' });
+        if (typeof gtag !== 'undefined') gtag('event', 'begin_checkout', { currency: 'USD', value: 27 });
+        if (typeof rdt !== 'undefined') rdt('track', 'AddToCart', { value: 27, currency: 'USD' });
+      });
+    });
+
+    // ViewContent fires after 3s
+    setTimeout(() => {
+      if (typeof fbq !== 'undefined') fbq('track', 'ViewContent', { content_name: 'Domain Grave Robber', value: 27, currency: 'USD' });
+      if (typeof rdt !== 'undefined') rdt('track', 'ViewContent');
+      if (typeof gtag !== 'undefined') gtag('event', 'view_item', { currency: 'USD', value: 27 });
+    }, 3000);
+  </script></body>
+</html>
